@@ -34,7 +34,7 @@ CREATE TABLE products(
 -- 1.Insert Sample Data into Customers Table :-
 INSERT INTO customers(name, email, address) 
 VALUES 	('Logu', 'logu@gmail.com','53, Norway Street, Chennai - 600001'),
-		('Ramu', 'ramu@gmail.com','50, Ganesh Street, Salem - 636501'),
+	('Ramu', 'ramu@gmail.com','50, Ganesh Street, Salem - 636501'),
         ('Karthick', 'karthick@gmail.com','29, Krishna Street, Erode - 637101'),
         ('Nandha', 'nandha@gmail.com','53, Adhiyaman Street, Chennai - 600001'),
         ('Deepak', 'deepak@gmail.com','53, Gandhi Street, Chennai - 600001');
@@ -42,7 +42,7 @@ VALUES 	('Logu', 'logu@gmail.com','53, Norway Street, Chennai - 600001'),
 -- 2.Insert Sample Data into Orders Table :-
 INSERT INTO orders (customer_id, order_date, total_amount)
 VALUES	(1,'2025-03-01', 5000),
-		(2,'2025-03-10', 2000),
+	(2,'2025-03-10', 2000),
         (3,'2025-03-15', 500),
         (4,'2025-03-25', 750),
         (5,'2025-03-31', 100),
@@ -55,7 +55,7 @@ VALUES	(1,'2025-03-01', 5000),
 -- 3.Insert Sample Data into Orders Table :-
 INSERT INTO products(name, price, description)
 VALUES	('Product-A', 50, 'Description-A'),
-		('Product-B', 100, 'Description-B'),
+	('Product-B', 100, 'Description-B'),
         ('Product-C', 75, 'Description-C'),
         ('Product-D', 150, 'Description-D'),
         ('Product-E', 30, 'Description-E');
@@ -63,8 +63,8 @@ VALUES	('Product-A', 50, 'Description-A'),
 -- Queries :-
 -- Retrieving all customers who have placed an order in the last 30 days.        
 SELECT 
-	id AS Customer_ID, 
-	name AS Customer_Name, 
+    id AS Customer_ID, 
+    name AS Customer_Name, 
     email AS Customer_Email, 
     address AS Customer_Address 
 FROM customers
@@ -75,7 +75,7 @@ WHERE id IN (
 
 -- Getting the Total Amount of All Orders Placed by Each Customer.
 SELECT 
-	customer_id AS Customer_ID, 
+    customer_id AS Customer_ID, 
     SUM(total_amount) AS Total_Spent
 FROM orders
 GROUP BY customer_id;
@@ -91,7 +91,7 @@ ADD discount DECIMAL(5,2) DEFAULT 0.00;
 
 -- Retrieving the top 3 products with the highest price.
 SELECT 
-	id AS Product_ID, 
+    id AS Product_ID, 
     name AS Product_Name, 
     price AS Product_Price,
     description AS Product_Description,
