@@ -29,3 +29,9 @@ This project demonstrates a simple **E-Commerce** system using SQL to manage **c
 ## 🚀 **Tech Stacks**
 - **SQL** : MySQL for database management
 - **Database Design** : Relational tables for customers, orders, and products
+  
+<br/>
+
+---
+
+<h3 align= 'center' style="color: fuchsia"><b>👀 Thanks for Exploring My Repository! 💖</b></h3>
